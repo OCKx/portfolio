@@ -1,0 +1,23 @@
+# Node modules (if you install any npm packages in the future)
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# OS-specific files (MacOS and Windows)
+.DS_Store
+Thumbs.db
+
+# Backup files (e.g., from text editors)
+*.bak
+*.tmp
+
+# Cache or temporary files
+.cache/
+*.swp
+*.swo
+
+# IDE-specific settings (optional)
+.vscode/
+.idea/
