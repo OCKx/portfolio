@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>portfolio</title>
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
 <body>
@@ -15,8 +15,9 @@
             </div class="header-img-cont">
             <nav>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Projects</a>
+                <a href="./src/about.html">About</a>
+                <a href="./src/project.html">Projects</a>
+                <a href="./src/skills.html">Skills</a>
             </nav>
         </header>
 
@@ -41,24 +42,18 @@
                 <h2>Featured Projects and Content</h2>
                 <div class="project-cont">
                     <h3>
-                        <a href="#">Node js project</a>
+                        <a href="https://ockx.github.io/letsDo-frontend/" target="_blank">LetsDo WebApp - In Progress</a>
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam omnis dolorem recusandae 
-                        libero commodi, deserunt eum iste repellendus at ab maiores similique accusamus adipisci ratione id minima optio error tenetur.
-                    </p>
+                    <p>A web application for task management. Built by me</p>
                 </div>
                 <div class="project-cont">
                     <h3>
-                        <a href="#">Node js project</a>
+                        <a href="https://ockx.github.io/preciousBlog/" target="_blank">Precious Blog</a>
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam omnis dolorem recusandae 
-                        libero commodi, deserunt eum iste repellendus at ab maiores similique accusamus adipisci ratione id minima optio error tenetur.
-                    </p>
+                    <p>Basic school project</p>
                 </div>
                 <i class="more">
-                    <a href="#">View more</a>
+                    <a href="./src/project.html">View more</a>
                 </i>
             </div>
         </section>
@@ -68,23 +63,35 @@
                 <div class="built-cont">
                     <div>
                         <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Projects</a>
+                        <a href="./src/about.html">About</a>
+                        <a href="./src/project.html">Projects</a>
+                        <a href="./src/skills.html">Skills</a>
                     </div>
                     <p class="built">Designed and built by Obiorah Callistus</p>
                     <img src="./static/img/line.png" width="200px" alt="line" class="footer-img">
                 </div>
                 <div class="footer-contact-cont">
-                    <a href="#">Github</a>
-                    <a href="#">Linkedin</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">CV/Resume</a>
+                    <a href="https://github.com/OCKx" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/ockx" target="_blank">Linkedin</a>
+                    <a href="https://www.instagram.com/ock_blind?igsh=MTdhNXpvaGZzdWJ1ZQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                    <a href="https://docs.google.com/document/d/1gNE_u3CHwxCuIGHObu0Vx4po6p2GdEAMUape7dsEHac/edit?usp=sharing" target="_blank">CV/Resume</a>
+                    <a href="mailto:ockpaul1@gmail.com">Email</a>
+                    <div class="contact2">
+                        <p>
+                            <address>Address: Emannantie 10P 305, Jyvaskyla Finland</address>
+                        </p>
+                        <p>Phone Number: +358 46 586 1993</p>
+                    </div>
                 </div>
             </div>
             <div class="footer2">
-                <p>Copyright 2024</p>
+                <p>&copy; <span id="year"></span> - All rights reserved.</p>
             </div>
         </footer>
     </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

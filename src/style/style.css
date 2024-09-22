@@ -92,6 +92,12 @@ footer{
     text-align: center;
 }
 
+.footer-contact-cont{
+    border-left: 1px solid green;
+    padding-left: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 .footer2{
     text-align: center;
 }
@@ -99,4 +105,8 @@ footer{
 a{
     margin: 5px;
     color: rgb(8, 74, 8);
+}
+
+.contact2{
+    margin-left: 5px;
 }

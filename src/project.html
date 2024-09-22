@@ -1,0 +1,125 @@
+<head></head>
+    <title>portfolio - project</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/project.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-img-cont">
+                <img src="../static/img/line.png" width="200px" alt="line">
+                <p>Obiorah Callistus</p>
+            </div class="header-img-cont">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="#">Projects</a>
+                <a href="./skills.html">Skills</a>
+            </nav>
+        </header>
+
+        <section>
+            <div class="section5">
+                <h2>PROJECTS</h2>
+                <div class="project-cont">
+                    <h3>LetsDo WebApp - <i>In Progress (CI/CD)</i></h3>
+                    <p>A web application for task management. Built by me</p>
+                    <div class="stack-cont">
+                        <h4>Backend - <i>Using Express, Render, Typescript, Node, Prisma ...</i></h4>
+                        <span>
+                            <a href="https://github.com/OCKx/letsDo-backend" target="_blank">Source Code</a>
+                            |
+                            <a href="https://letsdo-backend.onrender.com" target="_blank">Go live</a>
+                        </span>
+                    </div>
+                    <div class="stack-cont">
+                        <h4>Frontend - <i>using Angular, GitHub, Angular material, CSS ...</i></h4>
+                        <span>
+                            <a href="https://github.com/OCKx/letsDo-frontend" target="_blank">Source code</a>
+                            |
+                            <a href="https://ockx.github.io/letsDo-frontend/" target="_blank">Go live</a>
+                        </span>
+                    </div>
+                    <div class="stack-cont">
+                        <h4>Database - <i>using AWS, MySQL</i></h4>
+                        <span>Integrated MySQL database hosted on AWS with secure access configurations.</span>
+                    </div>
+                    <div class="stack-cont">
+                        <h4>API Documentation - <i>using Swagger</i></h4>
+                        <span>
+                            <a href="https://letsdo-backend.onrender.com/api-docs" target="_blank">Go live</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-cont">
+                    <h3>Precious Blog - <i>Using HTML, CSS, Javascript</i></h3>
+                    <p>Basic school project</p>
+                    <div class="stack-cont">
+                        <span>
+                            <a href="https://github.com/OCKx/preciousBlog" target="_blank" rel="noopener noreferrer">Source code</a>
+                            |
+                            <a href="https://ockx.github.io/preciousBlog/">Go live</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-cont">
+                    <h3>Rock Paper Scissors - <i>Using HTML, CSS, Javascript</i></h3>
+                    <p>Popular web game built with game sound</p>
+                    <div class="stack-cont">
+                        <span>
+                            <a href="https://github.com/OCKx/RockPaperScissors" target="_blank">Source code</a>
+                            |
+                            <a href="https://ockx.github.io/RockPaperScissors/">Go live</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="project-cont">
+                    <h3>Calculator - <i>Using HTML, CSS, Javascript</i></h3>
+                    <p>Mini web calculator</p>
+                    <div class="stack-cont">
+                        <span>
+                            <a href="https://github.com/OCKx/caculator-webApp" target="_blank">Source code</a>
+                            |
+                            <a href="https://ockx.github.io/caculator-webApp/">Go live</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer1">
+                <div class="built-cont">
+                    <div>
+                        <a href="../index.html">Home</a>
+                        <a href="./about.html">About</a>
+                        <a href="#">Projects</a>
+                        <a href="./skills.html">Skills</a>
+                    </div>
+                    <p class="built">Designed and built by Obiorah Callistus</p>
+                    <img src="../static/img/line.png" width="200px" alt="line" class="footer-img">
+                </div>
+                <div class="footer-contact-cont">
+                    <a href="https://github.com/OCKx" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/ockx" target="_blank">Linkedin</a>
+                    <a href="https://www.instagram.com/ock_blind?igsh=MTdhNXpvaGZzdWJ1ZQ%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                    <a href="https://docs.google.com/document/d/1gNE_u3CHwxCuIGHObu0Vx4po6p2GdEAMUape7dsEHac/edit?usp=sharing" target="_blank">CV/Resume</a>
+                    <a href="mailto:ockpaul1@gmail.com">Email</a>
+                    <div class="contact2">
+                        <p>
+                            <address>Address: Emannantie 10P 305, Jyvaskyla Finland</address>
+                        </p>
+                        <p>Phone Number: +358 46 586 1993</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <p>&copy; <span id="year"></span> - All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
