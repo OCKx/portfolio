@@ -48,7 +48,7 @@ header{
     align-items: center;
 }
 .header-img-cont p{
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
 }
 
@@ -83,8 +83,9 @@ h1{
     font-size: 25px;
 }
 
-.img-intro-cont{
+.img-intro-cont img{
     border-radius: 50% 50% 0 0;
+    border: 20px solid brown;
 }
 
 /* section 2 styling */
