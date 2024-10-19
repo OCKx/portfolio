@@ -74,9 +74,18 @@ nav a:hover{
     margin-right: 50px;
 }
 
+.name-cont{
+    margin-bottom: 50px;
+}
+
 h1{
     font-size: 50px;
+    margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.name-cont h4{
+    margin: 0;
 }
 
 .intro-text{
