@@ -94,7 +94,7 @@ h1{
 
 .img-intro-cont img{
     border-radius: 50% 50% 0 0;
-    border: 20px solid brown;
+    border: 20px solid rgb(219, 219, 163);
 }
 
 /* section 2 styling */
@@ -121,6 +121,10 @@ footer{
     border-left: 1px solid green;
     padding-left: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.footer-contact-cont a{
+    text-decoration: none;
 }
 
 .footer2{
