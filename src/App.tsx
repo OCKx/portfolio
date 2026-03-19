@@ -21,6 +21,7 @@ import {
   ChevronUp,
   GraduationCap,
   Briefcase,
+  Bot,
 } from 'lucide-react'
 
 /* ───────────── data ───────────── */
@@ -37,10 +38,19 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    title: 'Comprehension Game',
+    title: 'Aspiro AI Chatbot',
     description:
-      'A web application developed by CG World Oy that enhances educational learning through game-based interaction. Contributed to the development of Comprehension Game, Creator, and Tale Reader projects.',
-    tech: ['Django', 'PostgreSQL', 'Redux', 'React', 'TypeScript'],
+      'Built and deployed a personalized AI chatbot prototype using Ollama (LLM) with a React frontend and Express backend. Hosted on RunPod cloud GPU infrastructure with Docker containers for scalable deployment.',
+    tech: ['React', 'Express', 'Ollama', 'Docker', 'RunPod', 'TypeScript', 'Linux'],
+    links: [
+      { label: 'Source Code', url: '#' },
+    ],
+  },
+  {
+    title: 'CG World Learning Platform',
+    description:
+      'Developed and maintained web applications for CG World Learning Oy including Comprehension Game, Creator, and Tale Reader. Supported Africa pilot/testing and contributed research for advertising strategy.',
+    tech: ['Django', 'PostgreSQL', 'React', 'TypeScript', 'Redux'],
     links: [
       { label: 'Backend Source', url: '#' },
       { label: 'Backend Live', url: '#' },
@@ -50,7 +60,7 @@ const PROJECTS: Project[] = [
   {
     title: 'LetsDo WebApp',
     description:
-      'A web application for task management. Full-stack project with CI/CD pipeline.',
+      'A full-stack task management application with CI/CD pipeline, REST API with Swagger documentation, and JWT authentication.',
     tech: ['Express', 'Render', 'TypeScript', 'Node', 'Prisma', 'Angular', 'AWS', 'MySQL'],
     links: [
       { label: 'Backend Source', url: '#' },
@@ -60,19 +70,10 @@ const PROJECTS: Project[] = [
     status: 'In Progress (CI/CD)',
   },
   {
-    title: 'Precious Blog',
-    description: 'A basic blog project built as a school assignment.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    links: [
-      { label: 'Source Code', url: '#' },
-      { label: 'Go Live', url: '#' },
-    ],
-  },
-  {
     title: 'Foretrust Networking Website',
     description:
-      'An educative website for Foretrust Digital Consulting Center covering networking basics.',
-    tech: ['Angular'],
+      'An educative website for Foretrust Digital Consulting Center covering networking basics and models.',
+    tech: ['Angular', 'HTML', 'CSS'],
     links: [
       { label: 'Source Code', url: '#' },
       { label: 'Go Live', url: '#' },
@@ -80,7 +81,7 @@ const PROJECTS: Project[] = [
   },
   {
     title: 'Rock Paper Scissors',
-    description: 'Popular web game built with game sound effects.',
+    description: 'Popular web game built with game sound effects and interactive UI.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     links: [
       { label: 'Source Code', url: '#' },
@@ -88,8 +89,8 @@ const PROJECTS: Project[] = [
     ],
   },
   {
-    title: 'Calculator',
-    description: 'A mini web calculator.',
+    title: 'Precious Blog',
+    description: 'A blog project built as a school assignment with content management features.',
     tech: ['HTML', 'CSS', 'JavaScript'],
     links: [
       { label: 'Source Code', url: '#' },
@@ -102,58 +103,42 @@ interface Experience {
   company: string
   location: string
   role: string
+  period: string
   description: string
 }
 
 const EXPERIENCES: Experience[] = [
   {
-    company: 'Genesys Techhub Company',
-    location: 'Enugu',
-    role: 'Backend Developer (Intern)',
+    company: 'ByteSage',
+    location: 'United States',
+    role: 'Full-Stack Developer',
+    period: 'Jan 2026 — Present',
     description:
-      'Worked on maintaining and developing backend services with Express.js, Git, MySQL, TypeScript, JavaScript, and Swagger. Collaborated across frontend, Web3, and design teams. Gained Agile/Scrum experience.',
+      'Built and deployed a personalized Aspiro AI chatbot prototype (Ollama-based) using React and Express on a local Linux server for internal testing. Hosted the backend and Ollama on RunPod with Docker containers.',
   },
   {
-    company: 'Codewithmosh.com, Mosh Hamedani',
-    location: '',
-    role: 'Node.js Class',
-    description:
-      'Completed a comprehensive Node.js course focusing on essential backend concepts and best practices for building server-side applications.',
-  },
-  {
-    company: 'JAMK University of Applied Science',
+    company: 'CG World Learning Oy',
     location: 'Finland',
-    role: 'Entrance Exam on Database',
+    role: 'Full-Stack Developer',
+    period: 'Jan 2025 — Aug 2025',
     description:
-      'Prepared for and completed an entrance exam focused on SQL and MySQL database fundamentals.',
+      'Developed and maintained web applications with Django, React, and PostgreSQL; supported Africa pilot/testing; and contributed research for advertising strategy.',
   },
   {
     company: 'Genesys Techhub Company',
-    location: 'Enugu',
-    role: 'Upskill Mentor in Web Development',
+    location: 'Nigeria',
+    role: 'Back-End Developer',
+    period: '2023 — 2024',
     description:
-      'Mentored beginners in web development during a three-month Upskill program, guiding them through their learning journey.',
+      'Developed and maintained backend services using Express.js, MySQL, TypeScript, and Swagger. Collaborated across frontend, Web3, and design teams in an Agile/Scrum environment.',
   },
   {
-    company: 'Xc7 Systems Limited',
-    location: 'Enugu',
-    role: 'Student',
+    company: 'Foretrust Digital Center',
+    location: 'Nigeria',
+    role: 'Full-Stack Developer',
+    period: '2022 — 2023',
     description:
-      'Gained in-depth knowledge of web development (frontend and backend), DevOps practices, database management, and networking.',
-  },
-  {
-    company: 'Foretrust Digital Consulting Center',
-    location: 'Enugu',
-    role: 'Full-Stack Tutor',
-    description:
-      'Provided tutoring on frontend and backend technologies including HTML, CSS, JavaScript, XAMPP, MySQL, SQLite, Python, and Django.',
-  },
-  {
-    company: 'T-Max Programme',
-    location: 'Enugu',
-    role: 'Frontend Tutor',
-    description:
-      'Taught frontend development concepts to students in the T-Max ICT program as part of a government-sponsored initiative.',
+      "Built the company's database for student registration and tutored IT students in full-stack development using Django, JavaScript, and MySQL.",
   },
 ]
 
@@ -165,13 +150,14 @@ interface Education {
 
 const EDUCATION: Education[] = [
   {
-    school: 'JAMK University Of Applied Science, Finland',
-    degree: 'Bachelor of Engineering in ICT',
-    note: 'Currently a student',
+    school: 'JAMK University of Applied Science, Finland',
+    degree: 'B.Eng. Information and Communication Technology (ICT)',
+    note: '2024 — Ongoing',
   },
   {
     school: 'Anambra State University, Nigeria',
-    degree: 'Bachelor of Science in Entrepreneurship Studies',
+    degree: 'B.Sc. Entrepreneurship',
+    note: '2016 — 2021',
   },
 ]
 
@@ -185,27 +171,32 @@ const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: 'Frontend',
     icon: <Code2 className="w-5 h-5" />,
-    skills: ['JavaScript', 'TypeScript', 'React', 'Angular', 'Bootstrap', 'HTML', 'CSS', 'Angular Material', 'Tailwind'],
+    skills: ['React', 'Angular', 'JavaScript', 'TypeScript', 'HTML', 'CSS', 'Bootstrap', 'Tailwind'],
   },
   {
     title: 'Backend',
     icon: <Server className="w-5 h-5" />,
-    skills: ['Python', 'Django', 'Node.js', 'Express.js', 'PHP', 'Docker', 'Prisma'],
+    skills: ['Node.js (Express)', 'Python (Django)', 'REST APIs', 'Authentication (JWT)', 'Prisma ORM'],
   },
   {
     title: 'Databases',
     icon: <Database className="w-5 h-5" />,
-    skills: ['SQL', 'MySQL', 'SQLite', 'PostgreSQL', 'MongoDB'],
+    skills: ['MySQL', 'MongoDB', 'SQLite', 'PostgreSQL'],
   },
   {
     title: 'DevOps & Tools',
     icon: <Wrench className="w-5 h-5" />,
-    skills: ['Git', 'GitHub', 'GitLab', 'Swagger', 'Postman', 'Virtual Machines', 'Linux', 'UML', 'Networking', 'Scrum / Agile'],
+    skills: ['Nginx', 'Docker', 'Git', 'GitHub', 'Linux', 'Swagger', 'Postman'],
   },
   {
     title: 'Cloud & Hosting',
     icon: <Cloud className="w-5 h-5" />,
-    skills: ['AWS', 'Render', 'Heroku'],
+    skills: ['RunPod', 'AWS', 'Render', 'VPS / Server Deployment'],
+  },
+  {
+    title: 'AI Integration',
+    icon: <Bot className="w-5 h-5" />,
+    skills: ['Ollama', 'OpenAI API'],
   },
 ]
 
@@ -331,9 +322,10 @@ function Hero() {
             </p>
           </div>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg text-lg">
-            I am a passionate Full Stack Developer with 4+ years of experience, focused on creating
-            efficient and user-friendly web applications. With a strong background in both frontend
-            and backend technologies, I am dedicated to building seamless digital experiences.
+            Full-stack developer with experience building web applications, deploying services on
+            local and cloud servers, and integrating AI APIs (Ollama and OpenAI). Skilled in Nginx,
+            TypeScript, React, Angular, Django, Express.js, MySQL/PostgreSQL, and deployment tools
+            such as Docker, Git, and Linux.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a
@@ -412,7 +404,7 @@ function About() {
               >
                 <div className="absolute left-0 top-0 w-4 h-4 bg-emerald-500 rounded-full -translate-x-1/2 group-hover:scale-125 transition-transform shadow-md" />
                 <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-6 hover:shadow-md transition-shadow">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
                     <h4 className="font-semibold text-gray-900 dark:text-white">
                       {exp.company}{exp.location ? `, ${exp.location}` : ''}
                     </h4>
@@ -420,6 +412,7 @@ function About() {
                       {exp.role}
                     </span>
                   </div>
+                  <p className="text-xs text-gray-400 dark:text-gray-500 mb-2">{exp.period}</p>
                   <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                     {exp.description}
                   </p>
