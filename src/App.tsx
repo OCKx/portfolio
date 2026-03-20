@@ -337,7 +337,7 @@ function Navbar({
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         <a href="#Home" className="flex items-center gap-2 group">
           <img
-            src="/images/line.png"
+            src="./images/line.png"
             alt="Signature"
             className="h-8 opacity-80 dark:invert"
           />
@@ -482,7 +482,7 @@ function Hero() {
           <div className="relative">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-emerald-500 shadow-2xl shadow-emerald-500/20">
               <img
-                src="/images/profile.jpg"
+                src="./images/profile.jpg"
                 alt="Callistus Obiorah"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -794,7 +794,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-3">
             <img
-              src="/images/line.png"
+              src="./images/line.png"
               alt="Signature"
               className="h-8 opacity-60 invert"
             />
