@@ -7,6 +7,8 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    "types": ["d3-color","d3-ease","d3-path","d3-scale"],
+
     /* Tailwind stuff */
     "baseUrl": ".",
     "paths": {
