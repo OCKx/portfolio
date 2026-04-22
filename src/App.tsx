@@ -443,11 +443,11 @@ function Hero() {
             </p>
           </div>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-lg text-lg">
-            I am a Full-Stack Developer with a strong interest in building
-            clean, scalable, and user-friendly web applications. I work across
-            both frontend and backend technologies, using modern tools including
-            AI integration and containerization, and I enjoy deploying and
-            managing applications across local and cloud environments.
+            I am a Full-Stack Developer with experience in AI integration, web
+            application and API development, server setup and deployment in both local
+            and cloud environments, and database development using modern tools.
+            I am comfortable working with different operating systems and can
+            work effectively both independently and as part of a team.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a
@@ -482,7 +482,7 @@ function Hero() {
           <div className="relative">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-emerald-500 shadow-2xl shadow-emerald-500/20">
               <img
-                src="./images/profile.jpg"
+                src="./images/profile.png"
                 alt="Callistus Obiorah"
                 className="w-full h-full object-cover"
                 onError={(e) => {
